@@ -1,4 +1,4 @@
-   <h1 align="center">ecured and monitored web infrastructure</h1>
+   <h1 align="center">secured and monitored web infrastructure</h1>
 
                                                                 +-------------------------+
                                                                 |                         |
