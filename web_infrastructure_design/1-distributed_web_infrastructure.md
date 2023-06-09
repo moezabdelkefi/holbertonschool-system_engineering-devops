@@ -1,54 +1,54 @@
 <h1 align="center">Simple web stack</h1>
 
-                   +-------------------------+
-                   |                         |
-                   |   User's Web Browser    |
-                   |                         |
-                   +-----------+-------------+
-                               |
-                     3. DNS Resolution
-                               |
-                   +-----------v-------------+
-                   |                         |
-                   |   DNS Provider          |
-                   |                         |
-                   +-----+---------------+---+
-                         |               |
-           4. DNS Resolution | 4. DNS Resolution
-                         |               |
-                   +-----v---------------v---+
-                   |                         |
-                   |   Load Balancer         |
-                   |   (HAproxy)             |
-                   |                         |
-                   +-----+---------------+---+
-                         |               |
-         6. Load Balancing Algorithm | 6. Load Balancing Algorithm
-                         |               |
-         +---------------v---------------v-----+
-         |                                     |
-         |   Web Server (Nginx)                 |
-         |   Application Server                 |
-         |                                     |
-         +---------------+---------------------+
-                         |
-          7. Load Balanced Traffic
-                         |
-         +---------------v---------------------+
-         |                                     |
-         |   Web Server (Nginx)                 |
-         |   Application Server                 |
-         |                                     |
-         +---------------+---------------------+
-                         |
-          7. Load Balanced Traffic
-                         |
-         +---------------v---------------------+
-         |                                     |
-         |   Database Server (MySQL)           |
-         |   Primary-Replica Cluster           |
-         |                                     |
-         +-------------------------------------+
+                                                        +-------------------------+
+                                                        |                         |
+                                                        |   User's Web Browser    |
+                                                        |                         |
+                                                        +-----------+-------------+
+                                                                    |
+                                                            3. DNS Resolution
+                                                                    |
+                                                        +-----------v-------------+
+                                                        |                         |
+                                                        |   DNS Provider          |
+                                                        |                         |
+                                                        +-----+---------------+---+
+                                                                |               |
+                                                4. DNS Resolution | 4. DNS Resolution
+                                                                |               |
+                                                        +-----v---------------v---+
+                                                        |                         |
+                                                        |   Load Balancer         |
+                                                        |   (HAproxy)             |
+                                                        |                         |
+                                                        +-----+---------------+---+
+                                                                |               |
+                                                6. Load Balancing Algorithm | 6. Load Balancing Algorithm
+                                                                |               |
+                                                +---------------v---------------v-----+
+                                                |                                     |
+                                                |   Web Server (Nginx)                 |
+                                                |   Application Server                 |
+                                                |                                     |
+                                                +---------------+---------------------+
+                                                                |
+                                                7. Load Balanced Traffic
+                                                                |
+                                                +---------------v---------------------+
+                                                |                                     |
+                                                |   Web Server (Nginx)                 |
+                                                |   Application Server                 |
+                                                |                                     |
+                                                +---------------+---------------------+
+                                                                |
+                                                7. Load Balanced Traffic
+                                                                |
+                                                +---------------v---------------------+
+                                                |                                     |
+                                                |   Database Server (MySQL)           |
+                                                |   Primary-Replica Cluster           |
+                                                |                                     |
+                                                +-------------------------------------+
 
 
 ## For every additional element, why you are adding it:
